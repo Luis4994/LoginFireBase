@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrarse">
+    <LinearLayout
+        android:layout_width="900dp"
+        android:layout_height="900dp"
+        android:background="@mipmap/fondo3"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearlayoutlogin"
+        android:layout_width="350dp"
+        android:layout_height="280dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.187">
+
+        <EditText
+
+            android:id="@+id/et_correoreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingresa tu Correo"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="44dp" />
+
+        <EditText
+            android:id="@+id/et_passwordreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingresa tu Password"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="111dp" />
+        <EditText
+            android:id="@+id/et_passwordregrep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Confirma tu Password"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="111dp" />
+
+        <Button
+            android:id="@+id/registraruser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="registrarse"
+            tools:layout_editor_absoluteX="127dp"
+            tools:layout_editor_absoluteY="206dp"
+            android:onClick="registrarUsuario"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
